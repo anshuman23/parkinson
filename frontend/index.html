@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Parkinson</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+          
+        <!-- <center><div id=drawingboard></div></center>
+        <center><button id="submit" onClick="submit()">Submit</button></center> -->
+                <!--
+            Ideally these elements aren't created until it's confirmed that the 
+            client supports video/camera, but for the sake of illustrating the 
+            elements involved, they are created with markup (not JavaScript)
+        -->
+        <div class="container">
+            <video id="video" width="500px" height="500px" autoplay></video>
+            <button id="snap" class="btn btn--stripe">Heart Rate</button>
+            <button id="start" class="btn btn--stripe">Audio Start</button>
+            <button id="hear" class="btn btn--stripe">I hear it!</button>
+            <button id="stop" class="btn btn--stripe">Audio Stop</button>
+            <div id="jaundice-box"></div>
+            <button id="jaundice" class="btn btn--stripe">Submit</button>
+            <button id="show-jaundice" class="btn btn--stripe" >Jaundice</button>
+            <canvas id="canvas" width="500px" height="500px"></canvas>
+            
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        </div>
+    </body>
+    <script src="js/canvasjs.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    
+</html>
